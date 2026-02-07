@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://hbn8qiy0q3ky" path="res://gameSprites/gameSprites.png" id="2_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
-radius = 20.0
+radius = 22.022715
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
 atlas = ExtResource("2_g2els")
@@ -394,7 +394,8 @@ script = ExtResource("1_3vyb7")
 shape = SubResource("CircleShape2D_g2els")
 
 [node name="animations" type="AnimatedSprite2D" parent="player" unique_id=1463474776]
-scale = Vector2(1.85, 1.85)
+position = Vector2(0, -4)
+scale = Vector2(2.3, 2.3)
 sprite_frames = SubResource("SpriteFrames_2gdjj")
 animation = &"runningWest"
-frame_progress = 0.33895922
+frame_progress = 0.92227936
