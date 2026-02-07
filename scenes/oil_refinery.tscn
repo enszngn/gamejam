@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cfuxx2crblpyw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ym8ia"]
+radius = 80.024994
+
+[node name="oil_refinery" type="Node2D" unique_id=571866069]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1889914121]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2086873668]
+shape = SubResource("CircleShape2D_ym8ia")
