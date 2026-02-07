@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bdcqrfkgthbrn"]
 
-[ext_resource type="Script" uid="uid://q2qilkgwu0e8" path="res://scripts/room1.gd" id="1_vu5en"]
+[ext_resource type="Script" uid="uid://c45d50sqoyb33" path="res://scenes/room_1.gd" id="1_vu5en"]
 [ext_resource type="Texture2D" uid="uid://demu8vghrtnl3" path="res://gameSprites/gameSprites0.3.png" id="2_vu5en"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8oql1"]
