@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://bnormgf0f2fns"]
 
-[ext_resource type="Script" uid="uid://c45d50sqoyb33" path="res://scripts/room_1.gd" id="1_dbpl5"]
 [ext_resource type="Texture2D" uid="uid://demu8vghrtnl3" path="res://gameSprites/gameSprites0.3.png" id="2_ccapj"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_irjyx"]
@@ -29,7 +28,6 @@ tile_size = Vector2i(64, 64)
 sources/1 = SubResource("TileSetAtlasSource_vu5en")
 
 [node name="room4" type="Node2D" unique_id=1746282724]
-script = ExtResource("1_dbpl5")
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=1785323217]
 
