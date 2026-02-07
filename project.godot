@@ -23,6 +23,12 @@ GameState="*uid://by3lvs3pdwq1s"
 
 window/size/viewport_width=512
 window/size/viewport_height=512
+<<<<<<< Updated upstream
+window/stretch/mode="viewport"
+=======
+window/size/mode=2
+window/stretch/aspect="expand"
+>>>>>>> Stashed changes
 
 [dotnet]
 
