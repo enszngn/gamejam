@@ -41,4 +41,4 @@ rotation = 1.5707964
 color = Color(1, 0, 0, 1)
 
 [node name="oil_refinery" parent="." unique_id=571866069 instance=ExtResource("3_sugp2")]
-position = Vector2(-208, -211)
+position = Vector2(-219, -225)
