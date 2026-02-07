@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://cfuxx2crblpyw"]
 
 [ext_resource type="Script" uid="uid://r8um0gbeelvf" path="res://scripts/oil_refinery.gd" id="1_q01ft"]
+[ext_resource type="Texture2D" uid="uid://bkfpbia26ipn2" path="res://gameSprites/oil pumpjack0.1.png" id="2_7xutj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ym8ia"]
-radius = 24.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xlyhj"]
+size = Vector2(458, 200)
 
 [node name="oil_refinery" type="Node2D" unique_id=571866069]
 script = ExtResource("1_q01ft")
@@ -11,11 +12,18 @@ script = ExtResource("1_q01ft")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1889914121]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2086873668]
-shape = SubResource("CircleShape2D_ym8ia")
+position = Vector2(1, 14)
+shape = SubResource("RectangleShape2D_xlyhj")
 
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=117698707]
-offset_left = -18.0
-offset_top = -18.0
-offset_right = 18.0
-offset_bottom = 17.0
-color = Color(0, 0.61960787, 0, 1)
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=244411723]
+position = Vector2(1.0000076, 14.500011)
+scale = Vector2(5.871795, 5.378379)
+texture = ExtResource("2_7xutj")
+region_enabled = true
+region_rect = Rect2(304.99707, 381.97208, 78.004425, 37.99225)
+
+[node name="productionTimer" type="Timer" parent="StaticBody2D" unique_id=1520403965]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="StaticBody2D/productionTimer" to="." method="_on_production_timer_timeout"]
