@@ -1,0 +1,48 @@
+[gd_scene format=4 uid="uid://cwqmvi5mwrwuj"]
+
+[ext_resource type="Texture2D" uid="uid://demu8vghrtnl3" path="res://gameSprites/gameSprites0.3.png" id="1_586c8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w0ydv"]
+texture = ExtResource("1_586c8")
+texture_region_size = Vector2i(64, 64)
+6:16/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_4et86"]
+tile_size = Vector2i(64, 64)
+sources/1 = SubResource("TileSetAtlasSource_w0ydv")
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ktm03"]
+a = Vector2(256, 256)
+b = Vector2(256, -256)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_lsxps"]
+a = Vector2(-256, -256)
+b = Vector2(-256, 256)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_63qte"]
+a = Vector2(-256, -256)
+b = Vector2(256, -256)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_flmds"]
+a = Vector2(256, 256)
+b = Vector2(-256, 256)
+
+[node name="Room2" type="Node2D" unique_id=1938031753]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1496326084]
+tile_map_data = PackedByteArray("AAD8//z/AQAGABAAAAD9//z/AQAGABAAAAD+//z/AQAGABAAAAD///z/AQAGABAAAAAAAPz/AQAGABAAAAABAPz/AQAGABAAAAACAPz/AQAGABAAAAADAPz/AQAGABAAAAADAP3/AQAGABAAAAACAP3/AQAGABAAAAABAP3/AQAGABAAAAAAAP3/AQAGABAAAAD///3/AQAGABAAAAD+//3/AQAGABAAAAD9//3/AQAGABAAAAD8//3/AQAGABAAAAD8//7/AQAGABAAAAD9//7/AQAGABAAAAD+//7/AQAGABAAAAD///7/AQAGABAAAAAAAP7/AQAGABAAAAABAP7/AQAGABAAAAACAP7/AQAGABAAAAADAP7/AQAGABAAAAADAP//AQAGABAAAAACAP//AQAGABAAAAABAP//AQAGABAAAAAAAP//AQAGABAAAAD/////AQAGABAAAAD+////AQAGABAAAAD9////AQAGABAAAAD8////AQAGABAAAAD8/wAAAQAGABAAAAD9/wAAAQAGABAAAAD+/wAAAQAGABAAAAD//wAAAQAGABAAAAAAAAAAAQAGABAAAAABAAAAAQAGABAAAAACAAAAAQAGABAAAAADAAAAAQAGABAAAAADAAEAAQAGABAAAAACAAEAAQAGABAAAAABAAEAAQAGABAAAAAAAAEAAQAGABAAAAD//wEAAQAGABAAAAD+/wEAAQAGABAAAAD9/wEAAQAGABAAAAD8/wEAAQAGABAAAAD8/wIAAQAGABAAAAD9/wIAAQAGABAAAAD+/wIAAQAGABAAAAD//wIAAQAGABAAAAAAAAIAAQAGABAAAAABAAIAAQAGABAAAAACAAIAAQAGABAAAAADAAIAAQAGABAAAAADAAMAAQAGABAAAAACAAMAAQAGABAAAAABAAMAAQAGABAAAAAAAAMAAQAGABAAAAD//wMAAQAGABAAAAD+/wMAAQAGABAAAAD9/wMAAQAGABAAAAD8/wMAAQAGABAAAAA=")
+tile_set = SubResource("TileSet_4et86")
+
+[node name="walls" type="StaticBody2D" parent="." unique_id=1325572270]
+
+[node name="rightwall" type="CollisionShape2D" parent="walls" unique_id=762995491]
+shape = SubResource("SegmentShape2D_ktm03")
+
+[node name="leftwall" type="CollisionShape2D" parent="walls" unique_id=941993826]
+shape = SubResource("SegmentShape2D_lsxps")
+
+[node name="upwall" type="CollisionShape2D" parent="walls" unique_id=1733816274]
+shape = SubResource("SegmentShape2D_63qte")
+
+[node name="downwall" type="CollisionShape2D" parent="walls" unique_id=172831186]
+shape = SubResource("SegmentShape2D_flmds")
