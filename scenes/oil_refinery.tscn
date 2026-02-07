@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://cfuxx2crblpyw"]
 
+[ext_resource type="Script" uid="uid://r8um0gbeelvf" path="res://scripts/oil_refinery.gd" id="1_q01ft"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_ym8ia"]
 radius = 24.0
 
 [node name="oil_refinery" type="Node2D" unique_id=571866069]
+script = ExtResource("1_q01ft")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1889914121]
 
