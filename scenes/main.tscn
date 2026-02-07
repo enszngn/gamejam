@@ -2,10 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://b15tgnborxqam" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bdcqrfkgthbrn" path="res://scenes/room_1.tscn" id="2_0wfyh"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://duqogvhjenvq6" path="res://scenes/room_2.tscn" id="2_sugp2"]
 <<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://scenes/oil_refinery.tscn" id="3_sugp2"]
 =======
+=======
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://cfuxx2crblpyw" path="res://scenes/oil_refinery.tscn" id="3_sugp2"]
 >>>>>>> b7a22b97da7a9d9a2518fd1a8919a76c97d50839
 
@@ -14,11 +17,6 @@ z_index = 100
 
 [node name="playernode" parent="." unique_id=1067599194 instance=ExtResource("1_o5qli")]
 z_index = 100
-
-[node name="room2" parent="." unique_id=1590867234 instance=ExtResource("2_sugp2")]
-position = Vector2(2, -2)
-
-[node name="Camera2D" type="Camera2D" parent="room2" unique_id=577764194]
 
 [node name="room1" parent="." unique_id=1746282724 instance=ExtResource("2_0wfyh")]
 
