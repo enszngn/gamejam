@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://tubi7h67edb1"]
+
+[ext_resource type="Script" uid="uid://cn8ri2b7vd832" path="res://scripts/teleport.gd" id="1_w4hbs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ayim"]
+radius = 20.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kyeu7"]
+
+[node name="teleport" type="Area2D" unique_id=1833034301]
+collision_layer = 2
+script = ExtResource("1_w4hbs")
+target_scene_path = "room_2"
+target_position = Vector2(475, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=67805210]
+shape = SubResource("CircleShape2D_2ayim")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1008125817]
+position = Vector2(-4.7683716e-07, 4.7683716e-07)
+scale = Vector2(28, 26)
+texture = SubResource("PlaceholderTexture2D_kyeu7")

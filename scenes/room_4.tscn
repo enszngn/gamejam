@@ -1,7 +1,7 @@
-[gd_scene format=4 uid="uid://bdcqrfkgthbrn"]
+[gd_scene format=4 uid="uid://bnormgf0f2fns"]
 
-[ext_resource type="Script" uid="uid://c45d50sqoyb33" path="res://scripts/room_1.gd" id="1_vu5en"]
-[ext_resource type="Texture2D" uid="uid://demu8vghrtnl3" path="res://gameSprites/gameSprites0.3.png" id="2_vu5en"]
+[ext_resource type="Script" uid="uid://c45d50sqoyb33" path="res://scripts/room_1.gd" id="1_dbpl5"]
+[ext_resource type="Texture2D" uid="uid://demu8vghrtnl3" path="res://gameSprites/gameSprites0.3.png" id="2_ccapj"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_irjyx"]
 a = Vector2(256, 256)
@@ -20,7 +20,7 @@ a = Vector2(256, 256)
 b = Vector2(-256, 256)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vu5en"]
-texture = ExtResource("2_vu5en")
+texture = ExtResource("2_ccapj")
 texture_region_size = Vector2i(64, 64)
 6:16/0 = 0
 
@@ -28,8 +28,8 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/1 = SubResource("TileSetAtlasSource_vu5en")
 
-[node name="room1" type="Node2D" unique_id=1746282724]
-script = ExtResource("1_vu5en")
+[node name="room4" type="Node2D" unique_id=1746282724]
+script = ExtResource("1_dbpl5")
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=1785323217]
 
@@ -49,10 +49,10 @@ shape = SubResource("SegmentShape2D_d0u7m")
 tile_map_data = PackedByteArray("AAD/////AQAGABAAAAD+////AQAGABAAAAD9////AQAGABAAAAD8////AQAGABAAAAD8//7/AQAGABAAAAD8//3/AQAGABAAAAACAPz/AQAGABAAAAADAPz/AQAGABAAAAADAP3/AQAGABAAAAADAP7/AQAGABAAAAADAP//AQAGABAAAAACAP//AQAGABAAAAABAP//AQAGABAAAAAAAP//AQAGABAAAAAAAP7/AQAGABAAAAAAAP3/AQAGABAAAAABAP3/AQAGABAAAAACAP3/AQAGABAAAAACAP7/AQAGABAAAAABAP7/AQAGABAAAAD///7/AQAGABAAAAD+//7/AQAGABAAAAD+//3/AQAGABAAAAD9//3/AQAGABAAAAD///3/AQAGABAAAAD9//7/AQAGABAAAAD8/wAAAQAGABAAAAD8/wEAAQAGABAAAAD8/wIAAQAGABAAAAD8/wMAAQAGABAAAAD9/wMAAQAGABAAAAD+/wMAAQAGABAAAAD//wMAAQAGABAAAAAAAAMAAQAGABAAAAABAAMAAQAGABAAAAACAAMAAQAGABAAAAADAAMAAQAGABAAAAADAAIAAQAGABAAAAADAAEAAQAGABAAAAADAAAAAQAGABAAAAACAAIAAQAGABAAAAACAAEAAQAGABAAAAACAAAAAQAGABAAAAABAAIAAQAGABAAAAABAAEAAQAGABAAAAABAAAAAQAGABAAAAAAAAAAAQAGABAAAAAAAAEAAQAGABAAAAAAAAIAAQAGABAAAAD//wAAAQAGABAAAAD+/wAAAQAGABAAAAD+/wEAAQAGABAAAAD+/wIAAQAGABAAAAD//wEAAQAGABAAAAD//wIAAQAGABAAAAD9/wAAAQAGABAAAAD9/wEAAQAGABAAAAD9/wIAAQAGABAAAAD8//z/AQAGABAAAAD9//z/AQAGABAAAAD+//z/AQAGABAAAAD///z/AQAGABAAAAAAAPz/AQAGABAAAAABAPz/AQAGABAAAAA=")
 tile_set = SubResource("TileSet_8oql1")
 
-[node name="spawnright" type="Marker2D" parent="." unique_id=1715689595]
-position = Vector2(165, 35)
-
-[node name="spawndown" type="Marker2D" parent="." unique_id=26162976]
-position = Vector2(36, 163)
-
 [node name="center" type="Marker2D" parent="." unique_id=97682935]
+
+[node name="spawnup" type="Marker2D" parent="." unique_id=1715689595]
+position = Vector2(-28, -157)
+
+[node name="spawnleft" type="Marker2D" parent="." unique_id=1316926683]
+position = Vector2(-156, -29)
