@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://db83bcbiq6tmw"]
+
+[ext_resource type="Script" uid="uid://c4ia8a27274al" path="res://Deniza/Events/scripts/GameEvent.gd" id="1_64jdn"]
+
+[resource]
+script = ExtResource("1_64jdn")
+title = "Mahmut's Navigation Fail"
+description = "Mahmut refused to use GPS. He drove into a lake. All oil is gone."
+money_loss = -1000
+metadata/_custom_type_script = "uid://c4ia8a27274al"

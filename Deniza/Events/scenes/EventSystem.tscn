@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://mt4uks0c88fj"]
+
+[ext_resource type="Script" uid="uid://bi5l0y180md23" path="res://Deniza/Events/scripts/EventSystem.gd" id="1_ej8p8"]
+[ext_resource type="Script" uid="uid://c4ia8a27274al" path="res://Deniza/Events/scripts/GameEvent.gd" id="2_t7x2a"]
+[ext_resource type="Resource" uid="uid://db83bcbiq6tmw" path="res://Deniza/Events/resources/mahmut_accident.tres" id="3_srnw8"]
+[ext_resource type="PackedScene" uid="uid://diakgc6ppskod" path="res://Deniza/Events/scenes/EventPopup.tscn" id="4_a287j"]
+[ext_resource type="Resource" uid="uid://db0fycekyd3lj" path="res://Deniza/Events/resources/inspector_raid.tres" id="4_t7x2a"]
+
+[node name="EventSystem" type="Node2D" unique_id=2040446667]
+script = ExtResource("1_ej8p8")
+events = Array[ExtResource("2_t7x2a")]([ExtResource("3_srnw8"), ExtResource("4_t7x2a")])
+popup_scene = ExtResource("4_a287j")
+
+[node name="Timer" type="Timer" parent="." unique_id=461481798]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
