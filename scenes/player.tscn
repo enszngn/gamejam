@@ -221,7 +221,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleEast",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -244,7 +244,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleNorth",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -267,7 +267,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleSouth",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -290,7 +290,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleWest",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -313,7 +313,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"runningEast",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -336,7 +336,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"runningNorth",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -359,7 +359,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"runningSouth",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -382,7 +382,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"runningWest",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [node name="playernode" type="Node2D" unique_id=1067599194]
@@ -396,6 +396,5 @@ shape = SubResource("CircleShape2D_g2els")
 [node name="animations" type="AnimatedSprite2D" parent="player" unique_id=1463474776]
 scale = Vector2(1.85, 1.85)
 sprite_frames = SubResource("SpriteFrames_2gdjj")
-animation = &"idleSouth"
-frame = 2
-frame_progress = 0.5806124
+animation = &"runningWest"
+frame_progress = 0.33895922
