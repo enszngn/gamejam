@@ -13,6 +13,9 @@ var target_position = Vector2.ZERO
 @onready var click_marker = $"../../clickmarker"
 var marker_tween: Tween
 
+#animation'a erismek icin
+@onready var sprite_anim = $animations
+
 func _ready():
 	# Oyun başlar başlamaz (0,0)'a koşmasın diye hedefi olduğu yer yapıyoruz
 	target_position = global_position
@@ -52,16 +55,31 @@ func _physics_process(_delta):
 	if abs(x_diff) > threshold:
 		velocity.x = sign(x_diff) * speed # Yönü bul (-1 veya 1) ve hızla çarp
 		velocity.y = 0                     # Y hareketini iptal et (Çapraz gidemesin)
+		if sign(x_diff) == 1:
+			sprite_anim.play("runningEast")
+		else:
+			sprite_anim.play("runningWest")
 		
 	# Eğer X ekseninde hedefi tutturduysak, Y eksenine (Dikey) bak
 	elif abs(y_diff) > threshold:
 		velocity.x = 0                     # X hareketini iptal et
 		velocity.y = sign(y_diff) * speed  # Yönü bul ve hızla çarp
+		if sign(y_diff) == 1:
+			sprite_anim.play("runningSouth")
+		else:
+			sprite_anim.play("runningNorth")
 		
 	else:
 		# Hedefe vardık, tam merkeze otur ve dur
 		velocity = Vector2.ZERO
 		global_position = target_position
+		
+		var current = sprite_anim.animation
+		
+		if current.begins_with("running"):
+			# 3. "running" kelimesini "idle" ile değiştir (Sonuç: "idleSouth")
+			var idle_name = current.replace("running", "idle")
+			sprite_anim.play(idle_name)
 	
 	# Hareketi uygula
 	move_and_slide()
