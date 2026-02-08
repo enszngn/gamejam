@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://bmkycainkreqn"]
+
+[ext_resource type="Script" uid="uid://c4ia8a27274al" path="res://Deniza/Events/scripts/GameEvent.gd" id="1_3bxw0"]
+
+[resource]
+script = ExtResource("1_3bxw0")
+title = "Sabotage Audit"
+description = "Corrupt agents sent by rivals to disrupt operations and inflict financial loss."
+money_loss = -1000
+metadata/_custom_type_script = "uid://c4ia8a27274al"

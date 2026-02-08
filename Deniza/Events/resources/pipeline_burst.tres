@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://bj800tm43es3e"]
+
+[ext_resource type="Script" uid="uid://c4ia8a27274al" path="res://Deniza/Events/scripts/GameEvent.gd" id="1_1fkwd"]
+
+[resource]
+script = ExtResource("1_1fkwd")
+title = "Pipeline Burst"
+description = "A sudden pressure surge causes a leak, reducing monthly output and increasing costs."
+money_loss = -1000
+metadata/_custom_type_script = "uid://c4ia8a27274al"

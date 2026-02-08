@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_64jdn")
-title = "Mahmut's Navigation Fail"
-description = "Mahmut refused to use GPS. He drove into a lake. All oil is gone."
+title = "Driver's Navigation Fail"
+description = "Your driver refused to use GPS. He drove into a lake. All oil is gone."
 money_loss = -1000
 metadata/_custom_type_script = "uid://c4ia8a27274al"

@@ -11,7 +11,7 @@ func _ready():
 
 func start_timer():
 	# Pick a random time between 10 and 30 seconds
-	var wait_time = randf_range(10.0, 30.0)
+	var wait_time = randf_range(5.0, 10.0)
 	timer.start(wait_time)
 
 func _on_timer_timeout():

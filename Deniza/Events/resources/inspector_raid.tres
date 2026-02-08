@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_egisk")
-title = "Inspector Raid!!!"
-description = "You got raided by the inspector. It would be good if everything was in its place :D"
+title = "Inspector Raid"
+description = "A ruthless inspector arrives to fine you for pollution or exceeding production limits."
 money_loss = -1000
 metadata/_custom_type_script = "uid://c4ia8a27274al"

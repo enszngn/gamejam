@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b2pya4b2uv8mw"]
 
-[ext_resource type="Texture2D" uid="uid://inlf6oj3mg2v" path="res://Deniza/Intro_screen/background 4.png" id="1_0gm5p"]
+[ext_resource type="Texture2D" uid="uid://7k8svasbogk4" path="res://Deniza/Intro_screen/retro-pixel-art-landscape-featuring-industrial-factory-smoky-sunset-under-cloudy-sky-digital-painting-style-retro-pixel-380113251.webp" id="1_0gm5p"]
 
 [node name="IntroScene" type="Control" unique_id=1310359669]
 layout_mode = 3
@@ -40,9 +40,8 @@ uppercase = true
 
 [node name="BtnNewGame" type="Button" parent="VBoxContainer" unique_id=325184249]
 layout_mode = 2
-
-[node name="BtnLoadGame" type="Button" parent="VBoxContainer" unique_id=1703108216]
-layout_mode = 2
+text = "Start Game"
 
 [node name="BtnExit" type="Button" parent="VBoxContainer" unique_id=1968742513]
 layout_mode = 2
+text = "Exit"
