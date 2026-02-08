@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b2pya4b2uv8mw"]
+
+[ext_resource type="Texture2D" uid="uid://inlf6oj3mg2v" path="res://Deniza/Intro_screen/background 4.png" id="1_0gm5p"]
+
+[node name="IntroScene" type="Control" unique_id=1310359669]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1088385409]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0gm5p")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=960930247]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 132.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="GameTitle" type="Label" parent="VBoxContainer" unique_id=625551568]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "Till the Last Drop"
+uppercase = true
+
+[node name="BtnNewGame" type="Button" parent="VBoxContainer" unique_id=325184249]
+layout_mode = 2
+
+[node name="BtnLoadGame" type="Button" parent="VBoxContainer" unique_id=1703108216]
+layout_mode = 2
+
+[node name="BtnExit" type="Button" parent="VBoxContainer" unique_id=1968742513]
+layout_mode = 2
